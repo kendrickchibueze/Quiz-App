@@ -1,3 +1,36 @@
 <resources>
     <string name="app_name">QuizApp</string>
+    <string name="question1title">Question 1</string>
+    <string name="question2title">Question 2</string>
+    <string name="question3title">Question 3</string>
+    <string name="question4title">Question 4</string>
+    <string name="question5title">Question 5</string>
+    <string name="question6title">Question 6</string>
+    <string name="question1">Which TWO animals are domestic animals?</string>
+    <string name="question_1_first_answer">Dog</string>
+    <string name="question_1_second_answer">Lion</string>
+    <string name="question_1_third_answer">Cat</string>
+    <string name="question2">When was Udacity founded?</string>
+    <string name="question_2_first_answer">May 1993</string>
+    <string name="question_2_second_answer">June 2011</string>
+    <string name="question_2_third_answer">Late 20s</string>
+    <string name="question3">Who is the CEO of Udacity?</string>
+    <string name="question4">Which of the following Languages are used for mobile app programming?</string>
+    <string name="question_4_first_answer">Java and XML</string>
+    <string name="question_4_second_answer">XML and Kotlin</string>s
+    <string name="question_4_third_answer">JavaScript</string>
+    <string name="question5">Who is the president of USA?</string>
+    <string name="question_5_first_answer">Vans Rensburg</string>
+    <string name="question_5_second_answer">Katherine Miwok</string>
+    <string name="question_5_third_answer">Joe Biden</string>
+    <string name="question6">What is the capital of Nigeria?</string>
+    <string name="hint_for_question6">Nigeria is in West Africa</string>
+    <string name="submit">Submit</string>
+    <string name="reset">Reset</string>
+    <string name="third_question_answer">Gabriel</string>
+    <string name="sixth_question_answer">Abuja</string>
+    <string name="correct_answers">Correct Answers: </string>
+    <string name="toast_perfect_score">"/6 \n      Perfect result!"</string>
+    <string name="toast_almost_there">"/6 \n      Almost there!"</string>
+    <string name="toast_you_can_do_better">"/6 \n  You can do better!"</string>
 </resources>

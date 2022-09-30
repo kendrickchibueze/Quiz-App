@@ -1,157 +1,304 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/quiz"
+    android:fillViewport="true"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:paddingLeft="16dp"
-        android:paddingTop="16dp"
-        android:paddingRight="16dp"
-        android:paddingBottom="16dp"
-        tools:context=".MainActivity">
-
-
-        <EditText
-            android:id="@+id/name_field"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Input Your name to take the Quiz"
-            android:inputType="textCapWords" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
-            android:text="Is Udacity a learning platform or not?"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
-
-        <CheckBox
-            android:id="@+id/first_checkbox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="firstCheckBox"
-            android:paddingLeft="24dp"
-            android:text="Yes"
-            android:textSize="16sp" />
-
-        <CheckBox
-            android:id="@+id/second_checkbox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="secondCheckBox"
-            android:paddingLeft="24dp"
-            android:text="No"
-            android:textSize="16sp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="16dp"
-            android:text="Is the president of USA a male or female?"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <RadioGroup
-                android:id="@+id/radioGroup"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
-
-                <RadioButton
-                    android:id="@+id/radio_btn1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:checked="true"
-                    android:onClick="onRadioButtonClicked1"
-                    android:text="Male"
-                    android:textSize="20sp" />
-
-                <RadioButton
-                    android:id="@+id/radio_btn2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="82dp"
-                    android:layout_marginTop="-33dp"
-                    android:checked="true"
-                    android:onClick="onRadioButtonClicked2"
-                    android:text="Female"
-                    android:textSize="20sp" />
-            </RadioGroup>
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-
-    <TextView
-        android:id="@+id/Questions_attempted"
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="340dp"
-        android:gravity="center"
-        android:text="Number of Questions"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/quiz_questions"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/Questions_attempted"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:text="Question"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="20sp" />
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/quiz_questions"
-        android:layout_marginTop="50dp"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
         android:orientation="vertical">
 
-        <Button
-            android:id="@+id/btn_option1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/rounder"
-            android:onClick="CheckOption1"
-            android:padding="4dp"
-            android:text="option1"
-            android:textAllCaps="false" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view1"
+            style="@style/first_cardView_style"
+            card_view:cardCornerRadius="@dimen/card_view_default_radius"
+            card_view:contentPadding="@dimen/card_view_default_padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/question_numbers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question1title" />
+
+                <TextView
+                    style="@style/questions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question1" />
+
+                <CheckBox
+                    android:id="@+id/first_q_answer_one"
+                    style="@style/answers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_1_first_answer" />
+
+                <CheckBox
+                    android:id="@+id/first_q_answer_two"
+                    style="@style/answers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_1_second_answer" />
+
+                <CheckBox
+                    android:id="@+id/first_q_answer_three"
+                    style="@style/answers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_1_third_answer" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view2"
+            style="@style/cardView_style"
+            card_view:cardCornerRadius="@dimen/card_view_default_radius"
+            card_view:contentPadding="@dimen/card_view_default_padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/question_numbers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question2title" />
+
+                <TextView
+                    style="@style/questions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question2" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/second_q_answer_one"
+                        style="@style/answers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question_2_first_answer" />
+
+                    <RadioButton
+                        android:id="@+id/second_q_answer_two"
+                        style="@style/answers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question_2_second_answer" />
+
+                    <RadioButton
+                        android:id="@+id/second_q_answer_three"
+                        style="@style/answers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question_2_third_answer" />
+                </RadioGroup>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view3"
+            style="@style/cardView_style"
+            card_view:cardCornerRadius="@dimen/card_view_default_radius"
+            card_view:contentPadding="@dimen/card_view_default_padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/question_numbers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question3title" />
+
+                <TextView
+                    style="@style/questions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question3" />
+
+                <EditText
+                    android:id="@+id/third_q_answer"
+                    style="@style/answers"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLength="10" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view4"
+            style="@style/cardView_style"
+            card_view:cardCornerRadius="@dimen/card_view_default_radius"
+            card_view:contentPadding="@dimen/card_view_default_padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/question_numbers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question4title" />
+
+                <TextView
+                    style="@style/questions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question4" />
+
+                <CheckBox
+                    android:id="@+id/fourth_q_answer_one"
+                    style="@style/answers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_4_first_answer" />
+
+                <CheckBox
+                    android:id="@+id/fourth_q_answer_two"
+                    style="@style/answers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_4_second_answer" />
+
+                <CheckBox
+                    android:id="@+id/fourth_q_answer_three"
+                    style="@style/answers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_4_third_answer" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view5"
+            style="@style/cardView_style"
+            card_view:cardCornerRadius="@dimen/card_view_default_radius"
+            card_view:contentPadding="@dimen/card_view_default_padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/question_numbers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question5title" />
+
+                <TextView
+                    style="@style/questions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question5" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/fifth_q_answer_one"
+                        style="@style/answers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question_5_first_answer" />
+
+                    <RadioButton
+                        android:id="@+id/fifth_q_answer_two"
+                        style="@style/answers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question_5_second_answer" />
+
+                    <RadioButton
+                        android:id="@+id/fifth_q_answer_three"
+                        style="@style/answers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question_5_third_answer" />
+                </RadioGroup>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view6"
+            style="@style/cardView_style"
+            card_view:cardCornerRadius="@dimen/card_view_default_radius"
+            card_view:contentPadding="@dimen/card_view_default_padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/question_numbers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question6title" />
+
+                <TextView
+                    style="@style/questions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question6" />
+
+                <EditText
+                    android:id="@+id/sixth_q_answer"
+                    style="@style/answers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_for_question6"
+                    android:inputType="text"
+                    android:maxLength="10" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
         <Button
-            android:id="@+id/btn_option2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:id="@+id/submit_button"
+            style="@style/submit_button"
             android:background="@drawable/rounder"
-            android:onClick="CheckOption2"
-            android:padding="4dp"
-            android:text="option2"
-            android:textAllCaps="false" />
+            android:textColor="@color/white"
+            android:text="@string/submit"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/reset_button"
+            style="@style/reset_button"
+             android:background="@drawable/rounder"
+            android:textColor="@color/white"
+            android:text="@string/reset"
+            android:textAlignment="center" />
+
     </LinearLayout>
 
-
-</RelativeLayout>
+</ScrollView>
