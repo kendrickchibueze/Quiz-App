@@ -1,4 +1,4 @@
-# Deprecated Repository
+        # Deprecated Repository
 The associated Nanodegree program **Android Basics Nanodegree by Google** ND803 is deprecated now; therefore, this repository is also deprecated.
 
 # Archival Note
@@ -6,12 +6,13 @@ We are archiving this repository because we do not want learners to push persona
 - Utilize the https://knowledge.udacity.com/ forum to seek help on content-specific issues.
 - Submit a support ticket along with the link to your forked repository if (learners are) blocked for other reasons. Here are the links for the [retail consumers](https://udacity.zendesk.com/hc/en-us/requests/new) and [enterprise learners](https://udacityenterprise.zendesk.com/hc/en-us/requests/new?ticket_form_id=360000279131).
 
- Quiz App
+
+Quiz App
 ===================================
 
 This app displays an order form for coffee. Used in the Udacity Android for Beginners course. This is how the app would look like after build and running:
 
-<img width="427" alt="Screenshot 2022-02-08 at 7 31 06 PM" src="https://raw.githubusercontent.com/kendrickchibueze/-Modern-Node-on-AWS/0ca782782e06b94911d5f8fd6de036ce6f478486/aws-images/Screenshot%20(247).png">
+<img width="427" alt="Screenshot 2022-02-08 at 7 31 06 PM" src="https://raw.githubusercontent.com/kendrickchibueze/-Modern-Node-on-AWS/81463fa901193779eb1af9f86043a7acd90f0253/aws-images/Screenshot%20(249).png">
 
 
 Pre-requisites
