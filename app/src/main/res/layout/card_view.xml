@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view1"
+        style="@style/first_cardView_style"
+        card_view:cardCornerRadius="@dimen/card_view_default_radius"
+        card_view:contentPadding="@dimen/card_view_default_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/question_numbers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question1title" />
+
+            <TextView
+                style="@style/questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question1" />
+
+            <CheckBox
+                android:id="@+id/first_q_answer_one"
+                style="@style/answers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_1_first_answer" />
+
+            <CheckBox
+                android:id="@+id/first_q_answer_two"
+                style="@style/answers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_1_second_answer" />
+
+            <CheckBox
+                android:id="@+id/first_q_answer_three"
+                style="@style/answers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_1_third_answer" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view2"
+        style="@style/cardView_style"
+        card_view:cardCornerRadius="@dimen/card_view_default_radius"
+        card_view:contentPadding="@dimen/card_view_default_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/question_numbers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question2title" />
+
+            <TextView
+                style="@style/questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question2" />
+
+            <RadioGroup
+                android:id="@+id/radio_group2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/second_q_answer_one"
+                    style="@style/answers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_2_first_answer" />
+
+                <RadioButton
+                    android:id="@+id/second_q_answer_two"
+                    style="@style/answers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_2_second_answer" />
+
+                <RadioButton
+                    android:id="@+id/second_q_answer_three"
+                    style="@style/answers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_2_third_answer" />
+            </RadioGroup>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view3"
+        style="@style/cardView_style"
+        card_view:cardCornerRadius="@dimen/card_view_default_radius"
+        card_view:contentPadding="@dimen/card_view_default_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/question_numbers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question3title" />
+
+            <TextView
+                style="@style/questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question3" />
+
+            <EditText
+                android:id="@+id/third_q_answer"
+                style="@style/answers"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLength="10" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view4"
+        style="@style/cardView_style"
+        card_view:cardCornerRadius="@dimen/card_view_default_radius"
+        card_view:contentPadding="@dimen/card_view_default_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/question_numbers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question4title" />
+
+            <TextView
+                style="@style/questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question4" />
+
+            <CheckBox
+                android:id="@+id/fourth_q_answer_one"
+                style="@style/answers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_4_first_answer" />
+
+            <CheckBox
+                android:id="@+id/fourth_q_answer_two"
+                style="@style/answers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_4_second_answer" />
+
+            <CheckBox
+                android:id="@+id/fourth_q_answer_three"
+                style="@style/answers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_4_third_answer" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view5"
+        style="@style/cardView_style"
+        card_view:cardCornerRadius="@dimen/card_view_default_radius"
+        card_view:contentPadding="@dimen/card_view_default_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/question_numbers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question5title" />
+
+            <TextView
+                style="@style/questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question5" />
+
+            <RadioGroup
+                android:id="@+id/radio_group5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/fifth_q_answer_one"
+                    style="@style/answers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_5_first_answer" />
+
+                <RadioButton
+                    android:id="@+id/fifth_q_answer_two"
+                    style="@style/answers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_5_second_answer" />
+
+                <RadioButton
+                    android:id="@+id/fifth_q_answer_three"
+                    style="@style/answers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_5_third_answer" />
+            </RadioGroup>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view6"
+        style="@style/cardView_style"
+        card_view:cardCornerRadius="@dimen/card_view_default_radius"
+        card_view:contentPadding="@dimen/card_view_default_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/question_numbers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question6title" />
+
+            <TextView
+                style="@style/questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question6" />
+
+            <EditText
+                android:id="@+id/sixth_q_answer"
+                style="@style/answers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_for_question6"
+                android:inputType="text"
+                android:maxLength="10" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</merge>

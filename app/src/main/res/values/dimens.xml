@@ -2,4 +2,5 @@
 <resources>
     <dimen name="card_view_default_radius">16dp</dimen>
     <dimen name="card_view_default_padding">16dp</dimen>
+    <dimen name="text_size">15sp</dimen>
 </resources>

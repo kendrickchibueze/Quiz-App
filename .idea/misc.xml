@@ -4,7 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/ENVY/AndroidStudioProjects/QuizApp/app/src/main/res/layout/activity_main.xml" value="0.12760416666666666" />
+        <entry key="..\:/Users/ENVY/AndroidStudioProjects/QuizApp/app/src/main/res/layout/base_button.xml" value="0.12760416666666666" />
+        <entry key="..\:/Users/ENVY/AndroidStudioProjects/QuizApp/app/src/main/res/layout/card_view.xml" value="0.14166666666666666" />
         <entry key="..\:/Users/ENVY/AndroidStudioProjects/QuizApp/app/src/main/res/layout/score_bottom_sheet.xml" value="0.13496376811594202" />
+        <entry key="..\:/Users/ENVY/AndroidStudioProjects/QuizApp/app/src/main/res/layout/scroll_view.xml" value="0.1265625" />
       </map>
     </option>
   </component>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:id="@+id/submit_button"
+        style="@style/submit_button"
+        android:background="@drawable/rounder"
+        android:text="@string/submit"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/reset_button"
+        style="@style/reset_button"
+        android:background="@drawable/rounder"
+        android:text="@string/reset"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+</merge>
